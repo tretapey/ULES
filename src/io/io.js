@@ -39,9 +39,9 @@ export default function io () {
     }
 
     if (item.dataset.easing) {
-        item.style.setProperty('--easing', item.dataset.easing)
-      }
+      item.style.setProperty('--easing', item.dataset.easing)
+    }
 
-      observer.observe(item)
-    })
+    observer.observe(item)
+  })
 }

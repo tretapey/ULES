@@ -35,50 +35,44 @@
   styleInject(css);
 
   function io() {
-    return {
-      start: function start() {
-        var options = {
-          rootMargin: '0px',
-          threshold: 0.2
-        };
-        var observer = new IntersectionObserver(callback, options);
-        var itemsToObserve = document.querySelectorAll('.lazy');
+    var options = {
+      rootMargin: '0px',
+      threshold: 0.2
+    };
+    var observer = new IntersectionObserver(callback, options);
+    var itemsToObserve = document.querySelectorAll('.lazy');
 
-        function callback(entries, observer) {
-          entries.forEach(function (entry) {
-            if (entry.intersectionRatio > 0) {
-              entry.target.classList.add('animate');
-              observer.unobserve(entry.target);
-            } else {
-              console.log('Not intersecting');
-            }
-          });
+    function callback(entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.intersectionRatio > 0) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target);
+        } else {
+          console.log('Not intersecting');
         }
+      });
+    }
 
-        itemsToObserve.forEach(function (item) {
-          if (item.dataset.direction) {
-            item.style.setProperty('--animation-name', "fade-in-".concat(item.dataset.direction));
-          }
-
-          if (item.dataset.duration) {
-            item.style.setProperty('--duration', item.dataset.duration);
-          }
-
-          if (item.dataset.easing) {
-            item.style.setProperty('--easing', item.dataset.easing);
-          }
-
-          observer.observe(item);
-        });
+    itemsToObserve.forEach(function (item) {
+      if (item.dataset.direction) {
+        item.style.setProperty('--animation-name', "fade-in-".concat(item.dataset.direction));
       }
-    };
+
+      if (item.dataset.duration) {
+        item.style.setProperty('--duration', item.dataset.duration);
+      }
+
+      if (item.dataset.easing) {
+        item.style.setProperty('--easing', item.dataset.easing);
+      }
+
+      observer.observe(item);
+    });
   }
 
-  function ULES() {
-    return {
-      io: io
-    };
-  }
+  var ULES = {
+    io: io
+  };
 
   return ULES;
 

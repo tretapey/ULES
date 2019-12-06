@@ -2,11 +2,11 @@ import babel from 'rollup-plugin-babel'
 import postcss from 'rollup-plugin-postcss'
 
 export default {
-  input: 'src/ULES.js',
+  input: 'src/ules.js',
   output: {
-    file: 'dist/ULES.js',
+    file: 'dist/ules.js',
     format: 'umd',
-    name: 'ULES',
+    name: 'Ules',
   },
   plugins: [
     babel({

@@ -2,7 +2,7 @@
   "name": "ules",
   "version": "0.0.3",
   "description": "Useless but awesome Effects/Tools/Whatever for devs",
-  "main": "src/ULES.js",
+  "main": "src/ules.js",
   "scripts": {
     "test": "echo \"No test specified\"",
     "dev": "rollup --config --watch",

@@ -1,0 +1,29 @@
+{
+  "name": "ULES",
+  "version": "1.0.0",
+  "description": "Useless but awesome Effects/Tools/Whatever for devs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup --config --watch",
+    "build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tretapey/ULES.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tretapey/ULES/issues"
+  },
+  "homepage": "https://github.com/tretapey/ULES#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.5",
+    "rollup": "^1.27.8",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-postcss": "^2.0.3"
+  }
+}

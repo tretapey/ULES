@@ -9,3 +9,7 @@ Useless but awesome Effects/Tools/Whatever for devs
 # Build
 
 ```npm run build```
+
+# Table of contents
+
+* [io](https://github.com/tretapey/ULES/tree/master/src/io)

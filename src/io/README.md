@@ -4,9 +4,11 @@ io is a tool to add an intersection observer to any application.
 
 ## How it works
 
-io will observe anything with the class of 'ules-io', after importing Ules you can simply do: 
+io will observe anything with the class of 'ules-io', after installing Ules you can simply do in your javascript code: 
 
-```Ules.io()``` 
+```Ules.io()```
+
+**Note:** make sure that the DOM is loaded.
 
 And it will start observing, to set a particular threshold you need to specify it like this:
 
@@ -41,7 +43,11 @@ And the easing:
 
 If you want to always use the same animation/easing/duration you can set them individually like this: 
 
-```Ules.io({ direction, duration, easing })```
+```Ules.io({ direction, duration, easing })``` 
+
+ie: 
+
+```Ules.io({ 'right', '1s', 'ease-in' })```
 
 ## Images
 

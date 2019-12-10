@@ -8,9 +8,11 @@ io will observe anything with the class of 'ules-io', after installing Ules you 
 
 ```Ules.io()```
 
-**Note:** make sure that the DOM is loaded.
+And it will start observing.
 
-And it will start observing, to set a particular threshold you need to specify it like this:
+(**Note:** make sure that the DOM is loaded)
+
+To set a particular threshold you need to specify it like this:
 
 ```Ules.io({ threshold })```
 

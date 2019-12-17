@@ -1,6 +1,6 @@
 {
   "name": "ules",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Useless but awesome Effects/Tools/Whatever for devs",
   "main": "src/ules.js",
   "scripts": {

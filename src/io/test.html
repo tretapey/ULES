@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IO Test</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: #BADA88;
+      }
+
+      .images-container {
+        list-style: none;
+        margin: 100px auto;
+        width: 500px;
+        padding: 20px 0;
+        background-color: #BADA75;
+        box-shadow: 0px 0px 10px rgba(0,0,0, .3);
+      }
+
+      li > img {
+        display: block;
+        margin: 20px auto;
+        box-shadow: 0px 0px 10px rgba(0,0,0, .3);
+        min-height: 400px;
+      }
+    </style>
+
+    <ul class="images-container"></ul>
+
+    <script>
+      const container = document.querySelector('.images-container')
+      let imgs = []
+      for (let i = 106; i < 116; i++) {
+        imgs.push(`
+      <li>
+        <img class="ules-io" src="https://picsum.photos/id/${i}/100/100?blur=3" data-src="https://picsum.photos/id/${i}/400/400" alt="img-${i}">
+      </li>
+      `)
+      }
+      container.innerHTML = imgs.join('')
+    </script>
+    <script src="../../dist/ules.js"></script>
+    <script>
+      Ules.io({ direction: 'left' })
+    </script>
+  </body>
+</html>
